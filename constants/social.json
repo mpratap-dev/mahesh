@@ -16,7 +16,8 @@
   {
     "name": "github",
     "url": "https://www.instagram.com/mpratap.dev/",
-    "image": "svgs/github.svg"
+    "image": "svgs/github.svg",
+    "classes": "invert"
   },
   {
     "name": "dribble",

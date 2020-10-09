@@ -33,7 +33,7 @@ const Contact = () => (
             >
               <img
                 src={platform.image}
-                className="w-6 inline-block"
+                className={`w-6 inline-block ${platform.classes}`}
                 alt={platform.name}
               />
             </a>
