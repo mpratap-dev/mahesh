@@ -20,7 +20,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   .multiply-background {
-    mix-blend-mode: multiply;
+    mix-blend-mode: exclusion;
   }
 
   .invert {

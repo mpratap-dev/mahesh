@@ -42,7 +42,7 @@ const Contact = () => (
 
         <img
           src="images/chat.gif"
-          className="w-40 multiply-background  inline-block col-span-1 md:col-span-5 justify-self-center rounded-lg"
+          className="w-40 multiply-background  inline-block col-span-1 md:col-span-5 justify-self-center dark:rounded-full invert"
         />
       </div>
     </div>
