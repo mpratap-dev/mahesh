@@ -2,10 +2,10 @@ import DESIGNS from "../constants/portfolio.json";
 
 const Design = () => (
   <div className="md:p-10 p-5">
-    <h2 className="tracking-tight mb-2 md:mb-8 leading-10 font-black dark:text-gray-200 sm:text-5xl sm:leading-none md:text-xl grid gap-5 grid-cols-1 md:grid-cols-3 p-5 bg-gray-100 rounded-lg dark:bg-gray-800">
+    <h2 className="tracking-tight mb-2 md:mb-8 leading-10 font-black dark:text-gray-200 sm:text-5xl sm:leading-none md:text-xl">
       UI <span className="text-primary">Designs</span>
     </h2>
-    <div className="grid gap-5 grid-cols-1 md:grid-cols-3 p-5 bg-gray-100 rounded-lg">
+    <div className="grid gap-5 grid-cols-1 md:grid-cols-3 p-5 bg-gray-100 rounded-lg dark:bg-gray-800">
       {DESIGNS.map((design) => (
         <a href={design.url} target="_blank">
           <img
