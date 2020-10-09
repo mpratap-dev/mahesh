@@ -3,7 +3,7 @@ import SOCIAL from "../constants/social.json";
 const Contact = () => (
   <div className="p-5 md:py-20 md:px-5 md:w-3/6 mx-auto h-full flex items-center px-24">
     <div className="container">
-      <h2 className="tracking-tight mb-12 md:mb-4 md:mb-16 leading-10 font-black dark:text-gray-200 text-xl sm:text-5xl sm:leading-none md:text-xl">
+      <h2 className="tracking-tight mb-12 md:mb-4 md:mb-16 leading-10 font-black dark:text-gray-200 text-xl sm:text-5xl sm:leading-none md:text-xl text-left md:text-center">
         Let's <span class="text-primary">Talk</span>
       </h2>
       <div className="grid gap-10 md:gap-5 grid-cols-1 md:grid-cols-5 md:grid-rows-2">
