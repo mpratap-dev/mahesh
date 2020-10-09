@@ -17,3 +17,9 @@ body {
 .platform::-webkit-scrollbar {
   width: 0;
 }
+
+@media (prefers-color-scheme: dark) {
+  .multiply-background {
+    mix-blend-mode: multiply;
+  }
+}
