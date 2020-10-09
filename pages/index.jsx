@@ -39,7 +39,11 @@ export default function Home() {
           </div>
         </div>
         <div className={classes.imageContainer}>
-          <img src="images/dp.png" className="mx-auto rounded-full" alt="dp" />
+          <img
+            src="images/dp.png"
+            className="mx-auto rounded-full bg-gray-100"
+            alt="dp"
+          />
         </div>
       </div>
     </div>
