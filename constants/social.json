@@ -5,23 +5,23 @@
   },
   {
     "name": "linkedin",
-    "url": "https://www.instagram.com/mpratap.dev/",
+    "url": "https://www.linkedin.com/in/maheshpratap1995/",
     "image": "svgs/linkedin.svg"
   },
   {
     "name": "facebook",
-    "url": "https://www.instagram.com/mpratap.dev/",
+    "url": "https://www.facebook.com/Mahe7star/",
     "image": "svgs/facebook.svg"
   },
   {
     "name": "github",
-    "url": "https://www.instagram.com/mpratap.dev/",
+    "url": "https://github.com/mpratap-dev",
     "image": "svgs/github.svg",
     "classes": "invert"
   },
   {
     "name": "dribble",
-    "url": "https://www.instagram.com/mpratap.dev/",
+    "url": "https://dribbble.com/mahe7star/shots",
     "image": "svgs/dribble.svg"
   }
 ]
