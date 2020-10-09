@@ -7,12 +7,12 @@ const classes = {
   button:
     "w-full flex items-center justify-center px-8 py-2 border border-transparent text-base rounded-lg text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-300 ease-in-out md:py-2 md:text-md md:px-5",
   imageContainer:
-    "border-solid rounded-full mb-2 row-span-2 border-2 md:border-4 border-gray-200 mr-20 order-1 w-32 h-32 md:w-64 md:h-64 md:col-span-1 md:self-center md:justify-self-end md:order-2 md:mb-0",
+    "border-solid rounded-full mb-2 row-span-2 border-2 md:border-4 border-gray-200 md:mr-20 order-1 w-32 h-32 justify-self-center md:w-64 md:h-64 md:col-span-1 md:self-center md:justify-self-end md:order-2 md:mb-0",
 };
 
 export default function Home() {
   return (
-    <div className="p-5 md:py-0 md:pl-10 md:flex md:items-center h-full">
+    <div className="p-5 md:py-0 md:pl-10 flex items-center h-full">
       <div className={classes.grid}>
         <div className="col-span-2 font-black order-2 md:order-1">
           <div className="content md:my-0 mt-1 mb-8">
