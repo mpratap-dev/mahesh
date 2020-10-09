@@ -22,4 +22,8 @@ body {
   .multiply-background {
     mix-blend-mode: multiply;
   }
+
+  .invert {
+    filter: invert(1);
+  }
 }

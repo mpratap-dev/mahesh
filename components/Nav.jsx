@@ -12,7 +12,7 @@ const Nav = () => {
   return (
     <div className="px-5 md:px-12 flex items-center justify-between py-5 bg-gray-100 dark:bg-gray-800">
       <div>
-        <img src="images/logo-dark.png" alt="logo" className="w-8" />
+        <img src="images/logo-dark.png" alt="logo" className="w-8 invert" />
       </div>
       <div>
         {ROUTES.map((route) =>
