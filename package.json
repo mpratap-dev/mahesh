@@ -1,0 +1,23 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://mpratap.github.io",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
+  },
+  "dependencies": {
+    "next": "9.5.3",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "tailwindcss": "^1.8.10"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}

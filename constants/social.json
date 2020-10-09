@@ -1,0 +1,26 @@
+[{
+    "name": "instagram",
+    "url": "https://www.instagram.com/mpratap.dev/",
+    "image": "svgs/instagram.svg"
+  },
+  {
+    "name": "linkedin",
+    "url": "https://www.instagram.com/mpratap.dev/",
+    "image": "svgs/linkedin.svg"
+  },
+  {
+    "name": "facebook",
+    "url": "https://www.instagram.com/mpratap.dev/",
+    "image": "svgs/facebook.svg"
+  },
+  {
+    "name": "github",
+    "url": "https://www.instagram.com/mpratap.dev/",
+    "image": "svgs/github.svg"
+  },
+  {
+    "name": "dribble",
+    "url": "https://www.instagram.com/mpratap.dev/",
+    "image": "svgs/dribble.svg"
+  }
+]
