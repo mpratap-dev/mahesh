@@ -41,7 +41,7 @@ export default function Home() {
         <div className={classes.imageContainer}>
           <img
             src="images/dp.png"
-            className="mx-auto rounded-full bg-gray-100 dark:bg-gray-800"
+            className="mx-auto rounded-full bg-gray-100"
             alt="dp"
           />
         </div>
