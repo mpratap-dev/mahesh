@@ -20,6 +20,12 @@
     "classes": "invert"
   },
   {
+    "name": "medium",
+    "url": "https://medium.com/@mpratap-dev",
+    "image": "svgs/medium.svg",
+    "classes": "invert"
+  },
+  {
     "name": "dribble",
     "url": "https://dribbble.com/mahe7star/shots",
     "image": "svgs/dribble.svg"

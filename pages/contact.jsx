@@ -1,12 +1,12 @@
 import SOCIAL from "../constants/social.json";
 
 const Contact = () => (
-  <div className="p-5 md:py-20 md:px-5 md:w-3/6 mx-auto h-full flex items-center px-24">
+  <div className="p-5 md:py-20 md:px-5 md:w-3/6 mx-auto h-full flex items-center px-20">
     <div className="container">
       <h2 className="tracking-tight mb-12 md:mb-4 md:mb-16 leading-10 font-black dark:text-gray-200 text-xl sm:text-5xl sm:leading-none md:text-xl text-left md:text-center">
         Let's <span class="text-primary">Talk</span>
       </h2>
-      <div className="grid gap-10 md:gap-5 grid-cols-1 md:grid-cols-5 md:grid-rows-2">
+      <div className="grid gap-10 md:gap-5 grid-cols-1 md:grid-cols-6 md:grid-rows-2">
         <div className="contact col-span-1 md:col-span-3 text-md">
           <h3 className="text-lg font-black">
             Contact <span className="text-primary">Details</span>
@@ -21,7 +21,7 @@ const Contact = () => (
           </h4>
         </div>
 
-        <h4 className="text-lg col-span-1 md:col-span-2">
+        <h4 className="text-lg col-span-1 md:col-span-3">
           <p className="mb-5 font-black">
             Social <span className="text-primary">Media</span>
           </p>
