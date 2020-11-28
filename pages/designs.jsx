@@ -28,7 +28,7 @@ const Design = () => (
       <a
         href="https://www.instagram.com/mpratap.dev/"
         target="_blank"
-        className="mx-3"
+        className="mx-3 grid"
       >
         <Image
           src="/svgs/instagram.svg"
