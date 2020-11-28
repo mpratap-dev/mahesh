@@ -17,7 +17,7 @@ const Design = () => (
             src={design.image}
             height={200}
             width={350}
-            alt="foryou"
+            alt={design.name}
             className="h-full"
           />
         </a>

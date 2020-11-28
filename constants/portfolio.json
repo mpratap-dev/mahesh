@@ -1,38 +1,47 @@
 [
   {
     "url": "https://mpratap-dev.github.io/",
-    "image": "/images/portfolio.webp"
+    "image": "/images/portfolio.webp",
+    "name": "portfolio"
   },
   {
     "url": "https://mpratap-dev.github.io/OneWorld/",
-    "image": "/images/one_world.webp"
+    "image": "/images/one_world.webp",
+    "name": "one-world"
   },
   {
     "url": "https://mpratap-dev.github.io/Car_details/",
-    "image": "/images/car_details.webp"
+    "image": "/images/car_details.webp",
+    "name": "card-details"
   },
   {
     "url": "https://tranquil-depths-92141.herokuapp.com/",
-    "image": "/images/blog.webp"
+    "image": "/images/blog.webp",
+    "name": "blog"
   },
   {
     "url": "https://mpratap-dev.github.io/Studyabroad/canada.html",
-    "image": "/images/sa.webp"
+    "image": "/images/sa.webp",
+    "name,": "study-abroad"
   },
   {
     "url": "https://mpratap-dev.github.io/static_portfolio/",
-    "image": "/images/beardo.webp"
+    "image": "/images/beardo.webp",
+    "name": "beardo"
   },
   {
     "url": "https://mpratap-dev.github.io/Portfolio_ForYou/",
-    "image": "/images/foryou.webp"
+    "image": "/images/foryou.webp",
+    "name": "foryou"
   },
   {
     "url": "https://mpratap-dev.github.io/Netflix_redesign/",
-    "image": "/images/netflix.webp"
+    "image": "/images/netflix.webp",
+    "name": "netflix"
   },
   {
     "url": "https://mpratap-dev.github.io/4clover/",
-    "image": "/images/4clover.webp"
+    "image": "/images/4clover.webp",
+    "name": "4clover"
   }
 ]
