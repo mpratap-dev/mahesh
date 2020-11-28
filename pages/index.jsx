@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 const classes = {
   heading:
@@ -44,7 +44,7 @@ export default function Home() {
           <Image
             height="248"
             width="248"
-            src="/images/dp.png"
+            src="/images/dp.webp"
             className="mx-auto rounded-full bg-gray-100"
             alt="dp"
           />
