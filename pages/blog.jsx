@@ -27,7 +27,7 @@ const Blog = ({ blogs }) => (
           src="/svgs/medium.svg"
           height={20}
           width={20}
-          className="w-5 inline-block"
+          className="w-5 inline-block invert"
           alt="instagram"
         />
       </a>
@@ -36,7 +36,7 @@ const Blog = ({ blogs }) => (
           src="/svgs/dev.svg"
           height={20}
           width={20}
-          className="w-5 inline-block"
+          className="w-5 inline-block invert"
           alt="instagram"
         />
       </a>

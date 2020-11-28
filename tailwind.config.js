@@ -8,7 +8,7 @@ module.exports = {
         transparent: 'transparent',
         dark: '#222',
         white: '#fff',
-        primary: '#1f6bfa'
+        primary: '#4c51bf'
       },
       screens: {
         light: {
@@ -29,9 +29,6 @@ module.exports = {
         body: {
           color: config("theme.colors.dark"),
           backgroundColor: config("theme.colors.white")
-        },
-        '.text-primary': {
-          color: config("theme.colors.primary"),
         },
         "@screen dark": {
           body: {

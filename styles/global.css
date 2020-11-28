@@ -18,6 +18,10 @@ body {
   width: 0;
 }
 
+.text-primary {
+  @apply text-indigo-700;
+}
+
 @media (prefers-color-scheme: dark) {
   .multiply-background {
     mix-blend-mode: exclusion;
@@ -25,5 +29,9 @@ body {
 
   .invert {
     filter: invert(1);
+  }
+
+  .text-primary {
+    @apply text-indigo-500;
   }
 }

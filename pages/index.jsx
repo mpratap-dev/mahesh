@@ -7,7 +7,7 @@ const classes = {
   para:
     "md:mt-3 mb-3 md:mb-0 text-base dark:text-gray-200 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-md lg:mx-0",
   button:
-    "w-full flex items-center justify-center px-8 py-2 border border-transparent text-base rounded-lg text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-300 ease-in-out md:py-2 md:text-md md:px-5",
+    "w-full flex items-center justify-center px-8 py-2 border border-transparent text-base rounded-lg text-white bg-indigo-800 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-300 ease-in-out md:py-2 md:text-md md:px-5",
   imageContainer:
     "border-solid rounded-full mb-2 row-span-2 border-2 md:border-4 border-gray-200 md:mr-20 order-1 w-32 h-32 justify-self-center md:w-64 md:h-64 md:col-span-1 md:self-center md:justify-self-end md:order-2 md:mb-0 dark:border-gray-800",
 };
