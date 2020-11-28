@@ -16,6 +16,31 @@ const Blog = ({ blogs }) => (
         </a>
       ))}
     </div>
+    <h4 className="text-xs mt-5 justify-center flex items-center">
+      For more please visit
+      <a
+        href="https://medium.com/@mpratap-dev"
+        target="_blank"
+        className="ml-3"
+      >
+        <Image
+          src="/svgs/medium.svg"
+          height={20}
+          width={20}
+          className="w-5 inline-block"
+          alt="instagram"
+        />
+      </a>
+      <a href="https://dev.to/mpratapdev" target="_blank" className="ml-3">
+        <Image
+          src="/svgs/dev.svg"
+          height={20}
+          width={20}
+          className="w-5 inline-block"
+          alt="instagram"
+        />
+      </a>
+    </h4>
   </div>
 );
 
