@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const classes = {
   heading:
     "text-lg tracking-tight leading-10 font-black dark:text-gray-200 sm:text-xl sm:leading-none md:text-3xl mb-1 md:mb-0",
@@ -39,8 +41,10 @@ export default function Home() {
           </div>
         </div>
         <div className={classes.imageContainer}>
-          <img
-            src="images/dp.png"
+          <Image
+            height="248"
+            width="248"
+            src="/images/dp.png"
             className="mx-auto rounded-full bg-gray-100"
             alt="dp"
           />

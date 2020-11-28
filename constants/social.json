@@ -1,33 +1,33 @@
 [{
     "name": "instagram",
     "url": "https://www.instagram.com/mpratap.dev/",
-    "image": "svgs/instagram.svg"
+    "image": "/svgs/instagram.svg"
   },
   {
     "name": "linkedin",
     "url": "https://www.linkedin.com/in/maheshpratap1995/",
-    "image": "svgs/linkedin.svg"
+    "image": "/svgs/linkedin.svg"
   },
   {
     "name": "facebook",
     "url": "https://www.facebook.com/Mahe7star/",
-    "image": "svgs/facebook.svg"
+    "image": "/svgs/facebook.svg"
   },
   {
     "name": "github",
     "url": "https://github.com/mpratap-dev",
-    "image": "svgs/github.svg",
+    "image": "/svgs/github.svg",
     "classes": "invert"
   },
   {
     "name": "medium",
     "url": "https://medium.com/@mpratap-dev",
-    "image": "svgs/medium.svg",
+    "image": "/svgs/medium.svg",
     "classes": "invert"
   },
   {
     "name": "dribble",
     "url": "https://dribbble.com/mahe7star/shots",
-    "image": "svgs/dribble.svg"
+    "image": "/svgs/dribble.svg"
   }
 ]

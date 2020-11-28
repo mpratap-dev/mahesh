@@ -1,4 +1,5 @@
 import SOCIAL from "../constants/social.json";
+import Image from 'next/image'
 
 const Contact = () => (
   <div className="p-5 md:py-20 md:px-5 md:w-3/6 mx-auto h-full flex items-center px-20">
@@ -31,7 +32,9 @@ const Contact = () => (
               target="_blank"
               className={`${index + 1 !== SOCIAL.length ? "mr-5" : ""}`}
             >
-              <img
+              <Image
+                height="24"
+                width="24"
                 src={platform.image}
                 className={`w-6 inline-block ${platform.classes}`}
                 alt={platform.name}
@@ -40,10 +43,14 @@ const Contact = () => (
           ))}
         </h4>
 
-        <img
-          src="images/chat.gif"
-          className="w-40 multiply-background  inline-block col-span-1 md:col-span-5 justify-self-center dark:rounded-full invert"
-        />
+        <div className="inline-block col-span-1 md:col-span-5 justify-self-center w-40">
+          <Image  
+            height="160"
+            width="160"
+            src="/images/chat.gif"
+            className="multiply-background dark:rounded-full invert"
+          />
+        </div>
       </div>
     </div>
   </div>
