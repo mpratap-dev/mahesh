@@ -6,7 +6,7 @@ const Design = () => (
     <h2 className="tracking-tight mb-2 md:mb-8 leading-10 font-black dark:text-gray-200 sm:text-5xl sm:leading-none md:text-xl">
       UI <span className="text-primary">Designs</span>
     </h2>
-    <div className="grid gap-5 grid-cols-1 md:grid-cols-3 rounded-lg dark:bg-gray-800">
+    <div className="grid gap-5 grid-cols-1 md:grid-cols-3 rounded-lg">
       {DESIGNS.map((design) => (
         <a
           href={design.url}
