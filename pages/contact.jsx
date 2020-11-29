@@ -2,7 +2,7 @@ import SOCIAL from "../constants/social.json";
 import Image from "next/image";
 
 const Contact = () => (
-  <div className="p-5 md:py-20 md:px-5 md:w-3/6 mx-auto h-full flex items-center px-20">
+  <div className="p-5 md:py-20 md:px-5 md:w-3/6 mx-auto h-full px-20">
     <div className="container">
       <h2 className="tracking-tight mb-12 md:mb-4 md:mb-16 leading-10 font-black dark:text-gray-200 text-xl sm:text-5xl sm:leading-none md:text-xl text-left md:text-center">
         Let's <span class="text-primary">Talk</span>
@@ -28,6 +28,7 @@ const Contact = () => (
           </p>
           {SOCIAL.map((platform, index) => (
             <a
+              key={platform.name}
               href={platform.url}
               target="_blank"
               className={`${index + 1 !== SOCIAL.length ? "mr-5" : ""}`}

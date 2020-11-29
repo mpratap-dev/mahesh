@@ -9,7 +9,8 @@ const Blog = ({ blogs }) => (
       {blogs.map((blog) => (
         <a
           href={blog.url}
-          class="rounded-lg border-2 border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-lg overflow-hidden"
+          key={blog.id}
+          className="rounded-lg border-2 border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-lg overflow-hidden"
         >
           <Image height={230} width={500} src={blog.cover_image} />
           <h4 className="p-4 m-0">{blog.title}</h4>
@@ -44,7 +45,7 @@ const Blog = ({ blogs }) => (
   </div>
 );
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   const res = await fetch("https://dev.to/api/articles?username=mpratapdev");
   const blogs = await res.json();
   return { props: { blogs } };

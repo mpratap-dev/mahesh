@@ -10,6 +10,7 @@ const Design = () => (
       {DESIGNS.map((design) => (
         <a
           href={design.url}
+          key={design.name}
           target="_blank"
           className="rounded-lg border-2 border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-xl overflow-hidden grid"
         >

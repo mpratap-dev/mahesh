@@ -10,8 +10,7 @@ const App = ({ Component, pageProps }) => (
     </Head>
     <Nav />
     <div
-      style={{ height: "calc(100% - 72px)" }}
-      className="md:mx-12 bg-white dark:bg-gray-900 shadow-lg rounded-lg overflow-auto platform"
+      className="md:mx-12 bg-white dark:bg-gray-900 shadow-lg rounded-lg overflow-auto platform content"
     >
       <Component {...pageProps} />
     </div>
