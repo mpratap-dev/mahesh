@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Waves from "../components/waves";
+import Waves from "../components/Waves";
 
 const classes = {
   heading:
@@ -56,7 +56,6 @@ export default function Home() {
             />
           </div>
         </div>
-
         <Waves />
       </div>
     </>
