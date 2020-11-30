@@ -45,7 +45,7 @@ const Blog = ({ blogs }) => (
   </div>
 );
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch("https://dev.to/api/articles?username=mpratapdev");
   const blogs = await res.json();
   return { props: { blogs } };
