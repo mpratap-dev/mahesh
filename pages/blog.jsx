@@ -6,16 +6,17 @@ const Blog = ({ blogs }) => (
       Tech <span className="text-primary">Blogs</span>
     </h2>
     <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
-      {blogs.map((blog) => (
-        <a
-          href={blog.url}
-          key={blog.id}
-          className="rounded-lg border-2 border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-lg overflow-hidden"
-        >
-          <Image height={230} width={500} src={blog.cover_image} />
-          <h4 className="p-4 m-0">{blog.title}</h4>
-        </a>
-      ))}
+      {Array.isArray(blogs) &&
+        blogs.map((blog) => (
+          <a
+            href={blog.url}
+            key={blog.id}
+            className="rounded-lg border-2 border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-lg overflow-hidden"
+          >
+            <Image height={230} width={500} src={blog.cover_image} />
+            <h4 className="p-4 m-0">{blog.title}</h4>
+          </a>
+        ))}
     </div>
     <h4 className="text-xs mt-5 justify-center flex items-center">
       For more please visit
@@ -46,8 +47,14 @@ const Blog = ({ blogs }) => (
 );
 
 export async function getServerSideProps() {
-  const res = await fetch("https://dev.to/api/articles?username=mpratapdev");
-  const blogs = await res.json();
+  const API_KEY = "Gn3TzXTnmpEt8wwJxk3yYwDz";
+  const URL = "https://dev.to/api/articles/me";
+  const response = await fetch(URL, {
+    headers: {
+      "api-key": API_KEY,
+    },
+  });
+  const blogs = await response.json();
   return { props: { blogs } };
 }
 
