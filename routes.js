@@ -8,7 +8,7 @@ const ROUTES = [{
   },
   {
     pathname: '/blog',
-    label: 'Blog'
+    label: 'Blogs'
   },
   {
     pathname: '/contact',
