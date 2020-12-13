@@ -17,16 +17,16 @@ const Blog = ({ blogs }) => (
             <Image height={230} width={500} src={blog.cover_image} />
             <div className="p-4">
               <h4 className="m-0">{blog.title}</h4>
-              <span class="text-xs text-gray-600">
-                {moment(blog.published_at).format("MMMM Do YYYY")}
+              <span class="text-xs text-gray-500">
+                {moment(blog.published_at).format("MMMM Do, YYYY")}
               </span>
-              <div className="my-2">
+              <hr class="my-3 w-20 border-indigo-200" />
+              <p class="text-sm text-gray-700 mb-1">{blog.description}</p>
+              <div>
                 {blog.tag_list.map((tag) => (
                   <span class="text-xs mr-2 text-primary">#{tag}</span>
                 ))}
               </div>
-              {/* <hr /> */}
-              <p class="text-sm text-gray-800">{blog.description}</p>
             </div>
           </a>
         ))}
