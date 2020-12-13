@@ -24,7 +24,7 @@ const Design = () => (
         </a>
       ))}
     </div>
-    <h4 className="text-xs mt-5 justify-center flex items-center">
+    <h4 className="mt-10 justify-center flex items-center">
       For more please visit
       <a
         href="https://www.instagram.com/mpratap.dev/"
@@ -33,8 +33,8 @@ const Design = () => (
       >
         <Image
           src="/svgs/instagram.svg"
-          height={20}
-          width={20}
+          height={30}
+          width={30}
           className="w-5 inline-block"
           alt="instagram"
         />

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import moment from "moment";
 
 const Blog = ({ blogs }) => (
   <div className="md:p-10 p-5">
@@ -14,11 +15,23 @@ const Blog = ({ blogs }) => (
             className="rounded-lg border-2 border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-lg overflow-hidden"
           >
             <Image height={230} width={500} src={blog.cover_image} />
-            <h4 className="p-4 m-0">{blog.title}</h4>
+            <div className="p-4">
+              <h4 className="m-0">{blog.title}</h4>
+              <span class="text-xs text-gray-600">
+                {moment(blog.published_at).format("MMMM Do YYYY")}
+              </span>
+              <div className="my-2">
+                {blog.tag_list.map((tag) => (
+                  <span class="text-xs mr-2 text-primary">#{tag}</span>
+                ))}
+              </div>
+              {/* <hr /> */}
+              <p class="text-sm text-gray-800">{blog.description}</p>
+            </div>
           </a>
         ))}
     </div>
-    <h4 className="text-xs mt-5 justify-center flex items-center">
+    <h4 className="mt-10 justify-center flex items-center">
       For more please visit
       <a
         href="https://medium.com/@mpratap-dev"
@@ -27,8 +40,8 @@ const Blog = ({ blogs }) => (
       >
         <Image
           src="/svgs/medium.svg"
-          height={20}
-          width={20}
+          height={30}
+          width={30}
           className="w-5 inline-block invert"
           alt="instagram"
         />
@@ -36,8 +49,8 @@ const Blog = ({ blogs }) => (
       <a href="https://dev.to/mpratapdev" target="_blank" className="ml-3">
         <Image
           src="/svgs/dev.svg"
-          height={20}
-          width={20}
+          height={30}
+          width={30}
           className="w-5 inline-block invert"
           alt="instagram"
         />
