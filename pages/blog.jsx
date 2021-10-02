@@ -59,7 +59,7 @@ const Blog = ({ blogs }) => (
   </div>
 );
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const API_KEY = "Gn3TzXTnmpEt8wwJxk3yYwDz";
   const URL = "https://dev.to/api/articles/me";
   const response = await fetch(URL, {
