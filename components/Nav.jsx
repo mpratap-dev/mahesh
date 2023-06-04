@@ -10,7 +10,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="px-5 md:px-12 flex items-center justify-between py-5 bg-gray-100 dark:bg-gray-800">
+    <div className="px-5 md:px-12 flex items-center justify-between py-5">
       <Image
         width={32}
         height={32}
