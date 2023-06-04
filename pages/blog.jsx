@@ -21,6 +21,7 @@ const Blog = ({ blogs }) => (
               <span class="text-xs text-gray-500">
                 {moment(blog.published_at).format("MMMM Do, YYYY")}
               </span>
+              
               <hr class="my-3 w-20 border-indigo-200" />
               <p class="text-sm text-gray-700 mb-1">{blog.description}</p>
               <div>
