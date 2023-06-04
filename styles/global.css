@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&display=swap");
 
 html,
 body {
@@ -23,7 +23,7 @@ body {
 }
 
 .text-primary {
-  @apply text-indigo-700;
+  @apply text-purple-500;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,7 +36,7 @@ body {
   }
 
   .text-primary {
-    @apply text-indigo-500;
+    @apply text-purple-500;
   }
 }
 

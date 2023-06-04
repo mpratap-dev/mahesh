@@ -1,5 +1,4 @@
 import DESIGNS from "../constants/portfolio.json";
-import Image from "next/image";
 
 const Design = () => (
   <div className="md:p-10 p-5">
@@ -7,20 +6,15 @@ const Design = () => (
       UI <span className="text-primary">Designs</span>
     </h2>
     <div className="grid gap-5 grid-cols-1 md:grid-cols-3 rounded-lg">
-      {DESIGNS.map((design) => (
+      {DESIGNS.map((design, index) => (
         <a
           href={design.url}
-          key={design.name}
+          key={design.name+index}
+          style={{ height: 225 }}
           target="_blank"
           className="rounded-lg border-2 border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-xl overflow-hidden grid"
         >
-          <Image
-            src={design.image}
-            height={210}
-            width={350}
-            alt={design.name}
-            className="h-full"
-          />
+          <img height={225} className="h-full" src={design.image} alt={design.name} />
         </a>
       ))}
     </div>
@@ -31,12 +25,14 @@ const Design = () => (
         target="_blank"
         className="mx-3 grid"
       >
-        <Image
+        <img
           src="/svgs/instagram.svg"
           height={30}
           width={30}
           className="w-5 inline-block"
           alt="instagram"
+          placeholder="blur"
+          blurDataURL="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
         />
       </a>
     </h4>

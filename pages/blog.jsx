@@ -1,4 +1,3 @@
-import Image from "next/image";
 import moment from "moment";
 
 const Blog = ({ blogs }) => (
@@ -14,7 +13,9 @@ const Blog = ({ blogs }) => (
             key={blog.id}
             className="rounded-lg border-2 border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-lg overflow-hidden"
           >
-            <Image height={230} width={500} src={blog.cover_image} />
+            <img height={230} width={500}  src={blog.cover_image} />
+
+            {/* <Image height={230} width={500} src={blog.cover_image} /> */}
             <div className="p-4">
               <h4 className="m-0">{blog.title}</h4>
               <span class="text-xs text-gray-500">
@@ -38,7 +39,7 @@ const Blog = ({ blogs }) => (
         target="_blank"
         className="ml-3"
       >
-        <Image
+        <img
           src="/svgs/medium.svg"
           height={30}
           width={30}
@@ -47,7 +48,7 @@ const Blog = ({ blogs }) => (
         />
       </a>
       <a href="https://dev.to/mpratapdev" target="_blank" className="ml-3">
-        <Image
+        <img
           src="/svgs/dev.svg"
           height={30}
           width={30}

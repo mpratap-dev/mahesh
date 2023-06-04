@@ -6,7 +6,7 @@ import ROUTES from "../routes";
 const Nav = () => {
   const router = useRouter();
   const classes = {
-    menuItem: `ml-8 text-sm cursor-pointer font-extrabold hover:text-indigo-600 py-2 transition duration-300`,
+    menuItem: `ml-8 text-sm cursor-pointer font-extrabold hover:text-purple-400 py-2 transition duration-300`,
   };
 
   return (
@@ -25,7 +25,7 @@ const Nav = () => {
               <a
                 className={
                   classes.menuItem +
-                  (route.pathname === router.pathname ? " text-indigo-600" : "")
+                  (route.pathname === router.pathname ? " text-purple-500" : "")
                 }
               >
                 {route.label}

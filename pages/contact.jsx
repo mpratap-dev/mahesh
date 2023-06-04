@@ -1,5 +1,4 @@
 import SOCIAL from "../constants/social.json";
-import Image from "next/image";
 
 const Contact = () => (
   <div className="p-5 md:py-20 md:px-5 md:w-3/6 mx-auto h-full px-20">
@@ -33,7 +32,7 @@ const Contact = () => (
               target="_blank"
               className={`${index + 1 !== SOCIAL.length ? "mr-5" : ""}`}
             >
-              <Image
+              <img
                 height="24"
                 width="24"
                 src={platform.image}
@@ -45,7 +44,7 @@ const Contact = () => (
         </h4>
 
         <div className="inline-block col-span-1 md:col-span-5 justify-self-center w-40">
-          <Image
+          <img
             height="160"
             width="160"
             src="/images/chat.gif"

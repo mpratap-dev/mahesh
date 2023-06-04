@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Waves from "../components/Waves";
 
 const classes = {
@@ -7,11 +6,11 @@ const classes = {
   grid:
     "grid md:gap-5 grid-cols-1 grid-rows-2 md:grid-cols-3 md:grid-rows-1 z-10",
   para:
-    "md:mt-3 mb-3 md:mb-0 text-base dark:text-gray-200 sm:mt-5 sm:text-lg sm:mx-auto md:mt-3 md:text-md lg:mx-0",
+    "md:mt-3 mb-3 md:mb-0 text-base dark:text-gray-200 sm:mt-5 sm:text-lg sm:mx-auto md:mt-3 md:text-md lg:mx-0 font-bold",
   button:
-    "w-full flex items-center justify-center px-8 py-2 border border-transparent text-base rounded-lg text-white bg-indigo-800 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-300 ease-in-out md:py-2 md:text-md md:px-5",
+    "w-full flex items-center justify-center px-8 py-2 border border-transparent text-base rounded-lg text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:border-purple-800 focus:shadow-outline-purple transition duration-300 ease-in-out md:py-2 md:text-md md:px-5",
   imageContainer:
-    "border-solid rounded-full mb-2 row-span-2 border-4 md:border-8  border-gray-200 md:border-white md:mr-20 order-1 w-32 h-32 justify-self-center md:w-64 md:h-64 md:col-span-1 md:self-center md:justify-self-end md:order-2 md:mb-0 dark:border-gray-800",
+    "rounded-full mb-2 row-span-2 md:mr-15 order-1 w-1/2 h-96 justify-self-center md:w-3/4 md:col-span-1 md:self-center md:justify-self-center md:order-2 md:mb-0",
 };
 
 export default function Home() {
@@ -23,16 +22,14 @@ export default function Home() {
             <div className="content md:my-0 mt-1">
               <h2 className={classes.heading}>Hey,</h2>
               <p className={classes.para}>
-                I'm a <span className="text-primary">Front End Developer </span>
-                and a passionate{" "}
-                <span className="text-primary">UI/UX Developer </span>. With
-                extensive knowledge of front-end JavaScript and browser APIs as
-                well as significant experience with popular frameworks and
-                libraries like React and AngularJS.
+                As a dedicated <span className="text-primary">Front End Developer</span> and enthusiastic <span className="text-primary">UI/UX specialist</span>, 
+                I possess extensive expertise in front-end JavaScript, browser APIs, and hands-on experience with renowned 
+                frameworks and libraries such as React and VueJS. 
+                
+                
               </p>
               <p className={classes.para}>
-                I enjoy turning complex problems into simple, beautiful and
-                intuitive interface designs.
+                My ultimate joy lies in transforming intricate challenges into elegant, user-friendly interface designs.
               </p>
             </div>
             <div className="mt-3 sm:mt-5 sm:flex sm:justify-center lg:justify-start">
@@ -47,10 +44,10 @@ export default function Home() {
             </div>
           </div>
           <div className={classes.imageContainer}>
-            <Image
-              height="248"
-              width="248"
-              src="/images/dp.webp"
+            <img
+              height="280"
+              width="280"
+              src="/images/dp.jpg"
               className="mx-auto rounded-full bg-gray-100"
               alt="dp"
             />
