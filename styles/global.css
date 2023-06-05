@@ -26,6 +26,10 @@ body {
   @apply text-purple-500;
 }
 
+.invert {
+  filter: invert(0);
+}
+
 @media (prefers-color-scheme: dark) {
   .multiply-background {
     mix-blend-mode: exclusion;
@@ -45,3 +49,4 @@ body {
     height: calc(100% - 64px);
   }
 }
+
