@@ -10,7 +10,7 @@ const classes = {
   button:
     "w-full flex items-center justify-center px-8 py-2 border border-transparent text-base rounded-lg text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:border-purple-800 focus:shadow-outline-purple transition duration-300 ease-in-out md:py-2 md:text-md md:px-5",
   imageContainer:
-    "rounded-full mb-2 row-span-2 md:mr-15 order-1 w-1/2 h-96 justify-self-center md:w-3/4 md:col-span-1 md:self-center md:justify-self-center md:order-2 md:mb-0",
+    "rounded-full mb-2 row-span-2 md:mr-15 order-1 w-1/2 md:h-96 justify-self-center md:w-3/4 md:col-span-1 md:self-center md:justify-self-center md:order-2 md:mb-0",
 };
 
 export default function Home() {
