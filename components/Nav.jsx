@@ -22,14 +22,14 @@ const Nav = () => {
         {ROUTES.map((route) => {
           return (
             <Link href={route.pathname} key={route.label}>
-              <a
+              <span
                 className={
                   classes.menuItem +
                   (route.pathname === router.pathname ? " text-purple-500" : "")
                 }
               >
                 {route.label}
-              </a>
+              </span>
             </Link>
           );
         })}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import DESIGNS from "../constants/portfolio.json";
 
 const Design = () => (
@@ -7,25 +8,25 @@ const Design = () => (
     </h2>
     <div className="grid gap-5 grid-cols-1 md:grid-cols-3 rounded-lg">
       {DESIGNS.map((design, index) => (
-        <a
+        <span
           href={design.url}
           key={design.name+index}
           style={{ height: 225 }}
           target="_blank"
           className="rounded-lg border-2 border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-xl overflow-hidden grid"
         >
-          <img height={225} className="h-full" src={design.image} alt={design.name} />
-        </a>
+          <Image width={404} height={225} className="h-full" src={design.image} alt={design.name} />
+        </span>
       ))}
     </div>
     <h4 className="mt-10 justify-center flex items-center">
       For more please visit
-      <a
+      <span
         href="https://www.instagram.com/mpratap.dev/"
         target="_blank"
         className="mx-3 grid"
       >
-        <img
+        <Image 
           src="/svgs/instagram.svg"
           height={30}
           width={30}
@@ -34,7 +35,7 @@ const Design = () => (
           placeholder="blur"
           blurDataURL="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
         />
-      </a>
+      </span>
     </h4>
   </div>
 );

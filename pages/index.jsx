@@ -34,12 +34,12 @@ export default function Home() {
             </div>
             <div className="mt-3 sm:mt-5 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-full shadow">
-                <a
+                <span
                   href="Mahesh_Resume(Front-End).pdf"
                   className={classes.button}
                 >
                   Here's my CV
-                </a>
+                </span>
               </div>
             </div>
           </div>

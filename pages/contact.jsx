@@ -14,11 +14,11 @@ const Contact = () => (
           </h3>
           <h4 className="mt-5">
             <p className="text-gray-500">Mobile</p>
-            <a href="tel:+919873088432">9873088432</a>
+            <span href="tel:+919873088432">9873088432</span>
           </h4>
           <h4 className="mt-5">
             <p className="text-gray-500">Email</p>
-            <a href="mailto:mp1995singh@gmail.com">mp1995singh@gmail.com</a>
+            <span href="mailto:mp1995singh@gmail.com">mp1995singh@gmail.com</span>
           </h4>
         </div>
 
@@ -27,7 +27,7 @@ const Contact = () => (
             Social <span className="text-primary">Media</span>
           </p>
           {SOCIAL.map((platform, index) => (
-            <a
+            <span
               key={platform.name}
               href={platform.url}
               target="_blank"
@@ -40,7 +40,7 @@ const Contact = () => (
                 className={`w-6 inline-block ${platform.classes}`}
                 alt={platform.name}
               />
-            </a>
+            </span>
           ))}
         </h4>
 

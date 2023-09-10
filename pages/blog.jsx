@@ -1,4 +1,5 @@
 import moment from "moment";
+import Image from "next/image";
 
 const Blog = ({ blogs }) => (
   <div className="md:p-10 p-5">
@@ -8,14 +9,14 @@ const Blog = ({ blogs }) => (
     <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
       {Array.isArray(blogs) &&
         blogs.map((blog) => (
-          <a
+          <span
             href={blog.url}
             key={blog.id}
             className="rounded-lg border-2 border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-lg overflow-hidden"
           >
-            <img height={230} width={500}  src={blog.cover_image} />
+            {/* <img height={230} width={500}  src={blog.cover_image} /> */}
 
-            {/* <Image height={230} width={500} src={blog.cover_image} /> */}
+            <Image height={230} width={500} src={blog.cover_image} />
             <div className="p-4">
               <h4 className="m-0">{blog.title}</h4>
               <span class="text-xs text-gray-500">
@@ -30,12 +31,12 @@ const Blog = ({ blogs }) => (
                 ))}
               </div>
             </div>
-          </a>
+          </span>
         ))}
     </div>
     <h4 className="mt-10 justify-center flex items-center">
       For more please visit
-      <a
+      <span
         href="https://medium.com/@mpratap-dev"
         target="_blank"
         className="ml-3"
@@ -47,8 +48,8 @@ const Blog = ({ blogs }) => (
           className="w-5 inline-block invert"
           alt="instagram"
         />
-      </a>
-      <a href="https://dev.to/mpratapdev" target="_blank" className="ml-3">
+      </span>
+      <span href="https://dev.to/mpratapdev" target="_blank" className="ml-3">
         <img
           src="/svgs/dev.svg"
           height={30}
@@ -56,7 +57,7 @@ const Blog = ({ blogs }) => (
           className="w-5 inline-block invert"
           alt="instagram"
         />
-      </a>
+      </span>
     </h4>
   </div>
 );
@@ -65,9 +66,7 @@ export async function getStaticProps() {
   const API_KEY = "Gn3TzXTnmpEt8wwJxk3yYwDz";
   const URL = "https://dev.to/api/articles/me";
   const response = await fetch(URL, {
-    headers: {
-      "api-key": API_KEY,
-    },
+    headers: { "api-key": API_KEY },
   });
   const blogs = await response.json();
   return { props: { blogs } };
