@@ -1,5 +1,6 @@
 import moment from "moment";
 import Image from "next/image";
+import Link from "next/link";
 
 const Blog = ({ blogs }) => (
   <div className="md:p-10 p-5">
@@ -9,7 +10,7 @@ const Blog = ({ blogs }) => (
     <div className="grid gap-5 grid-cols-1 md:grid-cols-3">
       {Array.isArray(blogs) &&
         blogs.map((blog) => (
-          <span
+          <Link
             href={blog.url}
             key={blog.id}
             className="rounded-lg border-2 border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-lg overflow-hidden"
@@ -31,12 +32,12 @@ const Blog = ({ blogs }) => (
                 ))}
               </div>
             </div>
-          </span>
+          </Link>
         ))}
     </div>
     <h4 className="mt-10 justify-center flex items-center">
       For more please visit
-      <span
+      <Link
         href="https://medium.com/@mpratap-dev"
         target="_blank"
         className="ml-3"
@@ -48,8 +49,8 @@ const Blog = ({ blogs }) => (
           className="w-5 inline-block invert"
           alt="instagram"
         />
-      </span>
-      <span href="https://dev.to/mpratapdev" target="_blank" className="ml-3">
+      </Link>
+      <Link href="https://dev.to/mpratapdev" target="_blank" className="ml-3">
         <img
           src="/svgs/dev.svg"
           height={30}
@@ -57,7 +58,7 @@ const Blog = ({ blogs }) => (
           className="w-5 inline-block invert"
           alt="instagram"
         />
-      </span>
+      </Link>
     </h4>
   </div>
 );
