@@ -3,7 +3,7 @@ const Waves = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
-      className="absolute bottom-0 mb-4 left-0 right-0"
+      className="absolute bottom-0 mb-4 left-0 right-0 w-full"
     >
       <path
         fill="#5b2aa8"
@@ -14,7 +14,7 @@ const Waves = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
-      className="absolute bottom-0 mb-2 left-0"
+      className="absolute bottom-0 mb-2 left-0 right-0 w-full"
     >
       <path
         fill="#5b2aa8"
@@ -25,7 +25,7 @@ const Waves = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
-      className="absolute bottom-0 left-0"
+      className="absolute bottom-0 left-0 right-0 w-full"
     >
       <path
         fill="#5b2aa8"
