@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Waves from "../components/Waves";
 
 const classes = {
@@ -44,9 +45,10 @@ export default function Home() {
             </div>
           </div>
           <div className={classes.imageContainer}>
-            <img
+            <Image
               height="280"
               width="280"
+              priority
               src="/images/dp.jpg"
               className="mx-auto rounded-full bg-gray-100"
               alt="dp"

@@ -16,7 +16,14 @@ const Design = () => (
           target="_blank"
           className="rounded-lg border-2 border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-xl overflow-hidden grid"
         >
-          <Image width={404} height={225} className="h-full" src={design.image} alt={design.name} />
+          <Image 
+            width={404} 
+            height={225}
+            className="h-full" 
+            src={design.image} 
+            alt={design.name} 
+            priority
+          />
         </Link>
       ))}
     </div>
@@ -33,7 +40,6 @@ const Design = () => (
           width={30}
           className="w-5 inline-block"
           alt="instagram"
-          placeholder="blur"
           blurDataURL="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
         />
       </Link>
