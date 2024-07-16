@@ -1,6 +1,7 @@
 import moment from "moment";
 import Image from "next/image";
 import Link from "next/link";
+import { getBlogs } from "../services/blogs";
 
 const Blog = ({ blogs }) => (
   <div className="md:p-10 p-5">
@@ -12,23 +13,23 @@ const Blog = ({ blogs }) => (
         blogs.map((blog) => (
           <Link
             href={blog.url}
-            key={blog.id}
+            key={blog.url}
             className="rounded-lg border-2 border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-lg overflow-hidden"
           >
             {/* <img height={230} width={500}  src={blog.cover_image} /> */}
 
-            <Image height={230} width={500} src={blog.cover_image} />
+            <Image alt="cover" priority height={230} width={500} src={blog.cover_image} />
             <div className="p-4">
               <h4 className="m-0">{blog.title}</h4>
-              <span class="text-xs text-gray-500">
+              <span className="text-xs text-gray-500">
                 {moment(blog.published_at).format("MMMM Do, YYYY")}
               </span>
               
-              <hr class="my-3 w-20 border-indigo-200" />
-              <p class="text-sm text-gray-700 mb-1">{blog.description}</p>
+              <hr className="my-3 w-20 border-indigo-200" />
+              <p className="text-sm text-gray-700 mb-1">{blog.description}</p>
               <div>
                 {blog.tag_list.map((tag) => (
-                  <span class="text-xs mr-2 text-primary">#{tag}</span>
+                  <span key={tag} className="text-xs mr-2 text-primary">#{tag}</span>
                 ))}
               </div>
             </div>
@@ -64,13 +65,8 @@ const Blog = ({ blogs }) => (
 );
 
 export async function getStaticProps() {
-  const API_KEY = "Gn3TzXTnmpEt8wwJxk3yYwDz";
-  const URL = "https://dev.to/api/articles/me";
-  const response = await fetch(URL, {
-    headers: { "api-key": API_KEY },
-  });
-  const blogs = await response.json();
-  return { props: { blogs } };
+  const response = await getBlogs()
+  return response;
 }
 
 export default Blog;
