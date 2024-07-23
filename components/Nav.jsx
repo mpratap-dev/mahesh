@@ -21,7 +21,7 @@ const Nav = () => {
       <div>
         {ROUTES.map((route) => {
           return (
-            <Link href={route.pathname} key={route.label}>
+            <Link prefetch href={route.pathname} key={route.label}>
               <span
                 className={
                   classes.menuItem +
