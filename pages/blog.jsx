@@ -65,7 +65,7 @@ const Blog = ({ blogs }) => (
 );
 
 export async function getStaticProps() {
-  const response = await getBlogs()
+  const response = await getBlogs();
   return response;
 }
 
