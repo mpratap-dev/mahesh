@@ -7,5 +7,5 @@ export const getBlogs = async () => {
     },
   });
   const blogs = await response.json();
-  return { props: { blogs } };
+  return blogs;
 }

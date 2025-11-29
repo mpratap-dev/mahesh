@@ -18,18 +18,26 @@ const Blog = ({ blogs }) => (
           >
             {/* <img height={230} width={500}  src={blog.cover_image} /> */}
 
-            <Image alt="cover" priority height={230} width={500} src={blog.cover_image} />
+            <Image
+              alt="cover"
+              priority
+              height={230}
+              width={500}
+              src={blog.cover_image}
+            />
             <div className="p-4">
               <h4 className="m-0">{blog.title}</h4>
               <span className="text-xs text-gray-500">
                 {moment(blog.published_at).format("MMMM Do, YYYY")}
               </span>
-              
+
               <hr className="my-3 w-20 border-indigo-200" />
               <p className="text-sm text-gray-700 mb-1">{blog.description}</p>
               <div>
                 {blog.tag_list.map((tag) => (
-                  <span key={tag} className="text-xs mr-2 text-primary">#{tag}</span>
+                  <span key={tag} className="text-xs mr-2 text-primary">
+                    #{tag}
+                  </span>
                 ))}
               </div>
             </div>
@@ -48,7 +56,7 @@ const Blog = ({ blogs }) => (
           height={30}
           width={30}
           className="w-5 inline-block invert"
-          alt="instagram"
+          alt="medium"
         />
       </Link>
       <Link href="https://dev.to/mpratapdev" target="_blank" className="ml-3">
@@ -57,7 +65,7 @@ const Blog = ({ blogs }) => (
           height={30}
           width={30}
           className="w-5 inline-block invert"
-          alt="instagram"
+          alt="dev.to"
         />
       </Link>
     </h4>

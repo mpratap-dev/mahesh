@@ -1,10 +1,11 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import ROUTES from "../routes";
 
 const Nav = () => {
-  const router = useRouter();
+  const pathname = usePathname();
   const classes = {
     menuItem: `ml-8 text-sm cursor-pointer font-extrabold hover:text-purple-400 py-2 transition duration-300`,
   };
@@ -25,7 +26,7 @@ const Nav = () => {
               <span
                 className={
                   classes.menuItem +
-                  (route.pathname === router.pathname ? " text-purple-500" : "")
+                  (route.pathname === pathname ? " text-purple-500" : "")
                 }
               >
                 {route.label}
