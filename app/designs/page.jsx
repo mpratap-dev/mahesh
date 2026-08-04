@@ -25,10 +25,10 @@ export default function Design() {
             <Image
               width={404}
               height={225}
-              className="h-full"
+              className="h-full w-full"
               src={design.image}
               alt={design.name}
-              priority
+              
             />
           </Link>
         ))}

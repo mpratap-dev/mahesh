@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Waves from "../components/Waves";
+import ImagePreloader from "../components/ImagePreloader";
 
 const classes = {
   heading:
@@ -14,9 +15,10 @@ const classes = {
     "rounded-full mb-2 row-span-2 md:mr-15 order-1 w-1/2 md:h-96 justify-self-center md:w-3/4 md:col-span-1 md:self-center md:justify-self-center md:order-2 md:mb-0",
 };
 
-export default function Home() {
+export default function Home() {  
   return (
     <>
+      <ImagePreloader />
       <div className="p-5 md:py-0 md:pl-10 flex relative items-center h-full">
         <div className={classes.grid}>
           <div className="col-span-2 font-black order-2 md:order-1">
@@ -48,10 +50,10 @@ export default function Home() {
             <Image
               height="280"
               width="280"
-              priority
               src="/images/dp.jpg"
               className="mx-auto rounded-full bg-gray-100"
               alt="dp"
+              decoding="async"
             />
           </div>
         </div>
